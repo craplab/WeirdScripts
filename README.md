@@ -10,7 +10,7 @@ Note: You could even help to improve the documentation and contribution guidelin
 
 **Step 1:** Fork this repository and clone that forked repository to your local machine.
 
-**Step 2:** Inside the `WeirdScripts` folder, create a folder with the name of your script and add your own weird script that could surprise anyone.
+**Step 2:** Inside the `WeirdScripts` folder, create a folder with the name of your script (in small letters snake_case) and add your own weird script that could surprise anyone.
 
 **Step 3:** Add a readme file in the folder that you created and give a brief description about the script.
 
