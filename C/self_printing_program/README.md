@@ -1,0 +1,2 @@
+# Self Printing Program
+C program that prints itself. It is similar to the [Quine problem](https://en.wikipedia.org/wiki/Quine_(computing)) but this program displays the source code because __ FILE __ contains the location of this C file in a string.
