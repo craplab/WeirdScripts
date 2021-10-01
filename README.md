@@ -16,6 +16,8 @@ Note: You could even help to improve the documentation and contribution guidelin
 
 **Step 2:** Inside the `WeirdScripts` folder, choose your favorite language directory, create a folder with the name of your script (in small letters snake_case; eg: `awesome_script`) and add your own weird script that could surprise anyone.
 
+If your favorite language directory is not available, please go ahead and click one and add your folder in that directory.
+
 **Step 3:** Add a `readme` file in the folder that you created and give a brief description about the script.
 
 **Step 4:** Once you are happy with your code and readme, push the changes to the forked repository, and from there submit a Pull request to our repo. 
