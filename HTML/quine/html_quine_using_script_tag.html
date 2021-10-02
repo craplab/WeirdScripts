@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quine</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="content" style="display: none">
+      <h1>HTML Quine</h1>
+      <p>
+        A Quine program is one which takes no input and produces its own source
+        code as its output. This HTML script displays the HTML code on the
+        browser including the tags. This is done using the script tag.
+      </p>
+    </div>
+    <pre
+      class="prettyprint"
+      id="quine"
+      style="width: 95vw; height: 90vh; font-size: 18px"
+    ></pre>
+  </body>
+  <script type="text/javascript">
+    //<![CDATA[
+    (function () {
+      function quine(s) {
+        return s
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      var quineHtml = quine(
+        "<!DOCTYPE html>\n<html>\n" +
+          document.documentElement.innerHTML +
+          "\n<\/html>\n"
+      );
+      document.getElementById("quine").innerHTML = quineHtml;
+    })();
+    //]]>
+  </script>
+</html>
