@@ -1,2 +1,2 @@
-# A python program that prints its source code.
-print(open(__file__).read())
+variable = 'print("variable = " + repr(variable) + "\\neval(variable)")'
+eval(variable)
