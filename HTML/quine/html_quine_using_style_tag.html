@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quine</title>
+  </head>
+  <body>
+    <h1>HTML Quine</h1>
+    <h2>
+      A Quine program is one which takes no input and produces its own source
+      code as its output. This HTML script displays the HTML code on the browser
+      including the tags. This is done using the style tag.
+    </h2>
+    <style>
+      * {
+        display: block;
+        font-family: Monospace;
+        padding: 10px;
+        background-color: #1d1e22;
+        color: white;
+      }
+      style {
+        white-space: pre-wrap;
+      }
+      html::before {
+        content: "<!DOCTYPE html>\a<html>";
+        white-space: pre;
+      }
+      html::after {
+        content: "</html>";
+      }
+      head::before {
+        content: "<head>";
+      }
+      head::after {
+        content: "</head>";
+      }
+      title::before {
+        content: "<title>";
+      }
+      title::after {
+        content: "</title>";
+      }
+      body::before {
+        content: "<body>";
+      }
+      body::after {
+        content: "</body>";
+      }
+      h1::before {
+        content: "<h1>";
+      }
+      h1::after {
+        content: "</h1>";
+      }
+      h2::before {
+        content: "<h2>";
+      }
+      h2::after {
+        content: "</h2>";
+      }
+      style::before {
+        content: "<style>";
+      }
+      style::after {
+        content: "<\/style>";
+      }
+    </style>
+  </body>
+</html>
