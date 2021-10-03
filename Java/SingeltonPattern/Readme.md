@@ -26,6 +26,6 @@ Reflection problem is also not there.
 Therefore, it is 100% guaranteed that only one instance of the singleton is present within a **JVM**.
 
 
-If you want to find about more details go here,[Link to google](https://dzone.com/articles/java-singletons-using-enum)
+If you want to find about more details go here,[Singelton  pattern in ENUM](https://dzone.com/articles/java-singletons-using-enum)
 
 
