@@ -3,10 +3,10 @@
 
 ### Important links
 
-[lci github](https://github.com/justinmeza/lci)
-[install instructions](https://github.com/justinmeza/lci/blob/master/README.md)
-[official website](http://www.lolcode.org/)
-[tutorials](https://www.tutorialspoint.com/lolcode/index.htm)
+- [lci - lolcode interpreter](https://github.com/justinmeza/lci)
+- [Install instructions](https://github.com/justinmeza/lci/blob/master/README.md)
+- [Official website](http://www.lolcode.org/)
+- [Tutorials](https://www.tutorialspoint.com/lolcode/index.htm)
 
 ## Pattern printing program
 
