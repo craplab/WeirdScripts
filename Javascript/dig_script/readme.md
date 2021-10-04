@@ -1,4 +1,4 @@
-Gets the target value in a nested JSON object, based on the given key.
+## Gets the target value in a nested JSON object, based on the given key.
 
 - Use the `in` operator to check if `target` exists in `obj`.
 - If found, return the value of `obj[target]`.
