@@ -53,4 +53,5 @@ python3 search_github_username.py
 ![demo](./demo.png)
 
 <br>
+
 **NOTE**: some "reserved" usernames are marked as available but you cannot create account under those names. Example of such names are **api**, **new**, **get** and more
