@@ -9,7 +9,7 @@ REMOTE = "origin"
 SLEEP_DURATION_SEC = 24 * 60 * 60
 REPO_PATH = sys.argv[1] if sys.argv[1] != None else os.getcwd()
 NUM_DAYS_IN_YEAR = 365
-AUTO_UPDATE_FILENAME = 'commits2.txt'
+AUTO_UPDATE_FILENAME = 'commits.txt'
 TIME = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 def setup_git_repo(path: str):
