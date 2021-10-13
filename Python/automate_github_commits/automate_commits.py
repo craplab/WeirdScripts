@@ -1,50 +1,38 @@
-'''
-TODO: https://www.devdungeon.com/content/working-git-repositories-python
-
-run below command in a git directory
-   python automate_commits.py
-'''
 from datetime import datetime
 import git
 import os
 import sys
+import time
 
 BRANCH = "master"
-SLEEP_DURATION_MIN = 24 * 60
-DIRECTORY_PATH = sys.argv[1] if sys.argv[1] != None else os.getcwd()
+REMOTE = "origin"
+SLEEP_DURATION_SEC = 24 * 60 * 60
+REPO_PATH = sys.argv[1] if sys.argv[1] != None else os.getcwd()
 NUM_DAYS_IN_YEAR = 365
-FILE_NAME = 'commits.txt'
-
-# FIXME
-# create repo object. setup remote
-def setup_git_repo(path: str):
-    pass
-
-# TODO implement update_file()
-# create file if not exists. append date at the end
-def update_file(path: str):
-    pass
-
-# TODO
-def git_add_commit_push():
-    pass
-
-# go to dir
-repo = git.Repo(DIRECTORY_PATH)
-repo.git.checkout(f'origin/{BRANCH}', b=BRANCH)
+AUTO_UPDATE_FILENAME = 'commits2.txt'
 TIME = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-with open(f"{DIRECTORY_PATH}/{FILE_NAME}","a+") as f:
-    f.write(TIME)
+def setup_git_repo(path: str):
+    repo = git.Repo(path)
+    repo.git.checkout(BRANCH)
+    return repo
 
+def update_file(path: str):
+    with open(f"{REPO_PATH}/{AUTO_UPDATE_FILENAME}","a+") as f:
+        f.write(f"{TIME}\n")
 
-repo.git.add(FILE_NAME)
+def git_add_commit_push(repo):
+    repo.index.add([AUTO_UPDATE_FILENAME])
+    repo.index.commit(f'Commit Time: {TIME}')
 
-# git commit 
-repo.git.commit( m=f"Automated Commit Time: {TIME}" )
+    repo.remotes.origin.pull()
+    repo.remotes.origin.push()
 
-# git push
-# repo.git.
-
-
-print(os.getcwd())
+if __name__ == "__main__":
+    mrepo = setup_git_repo(REPO_PATH)
+    for i in range(NUM_DAYS_IN_YEAR):
+        TIME = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print(TIME)
+        update_file(REPO_PATH)
+        git_add_commit_push(mrepo)
+        time.sleep(SLEEP_DURATION_SEC)
