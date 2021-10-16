@@ -1,0 +1,16 @@
+# Checklist Buddy Github App: https://mibexsoftware.atlassian.net/wiki/spaces/CB/pages/2936144097/Getting+started
+
+# To create a new task, use '+task+' followed by the task description. 
+
+# To filter when a task is applied, prepend the task/comment/title with one or more of the following filters:
+# '--source' - the source branch
+# '--target' - the target/destination branch
+# '--files' - diff file pattern, similar to .gitignore
+
+
+--target main +title+ **PR Checklist** :checkered_flag:
+--target main +task+ Make sure your program is inside correct directory depending on the programming language (ex: Python, Java, C++, ...)
+--target main +task+ Create a folder with the name of your script.
+--target main +task+ Add your script to the folder.
+--target main +task+ Add a **README.md** file in the folder that you created and give a brief description about the script.
+--target main +task+ In the PR page, add a link to the issue you have worked on.
