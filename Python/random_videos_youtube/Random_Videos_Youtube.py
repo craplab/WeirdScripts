@@ -1,3 +1,15 @@
+'''
+Script Name   : Random_Videos_Youtube.py
+Author        : Bobin Mathew
+Created       : 13th October 2021
+Last Modified	: 16th October 2021
+Version       : 1.0.0
+
+Modifications :
+
+Description   : This python script will create a github repo from command line.
+'''
+
 import time
 import random
 import urllib.request
