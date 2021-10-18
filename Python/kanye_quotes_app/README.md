@@ -12,27 +12,27 @@ A python script to generate Kanye Quotes using [Tkinter](https://docs.python.org
 
 ## Run Locally
 
-Clone the project and go to the project directory
-
+Clone the project
 ```bash
-  $ cd kanye-quotes-app
+  $ git clone https://github.com/craplab/WeirdScripts.git
+```
+Go to the project directory
+```bash
+  $ cd Python/kanye-quotes-app
 ```
 
 [Create a virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment) (optional but recommended)
-
 ```bash
   $ python -m venv venv
-  source venv/Scripts/activate
+  $ source venv/Scripts/activate
 ```
 
 Install dependencies
-
 ```bash
   $ pip install -r requirements.txt
 ```
 
 Run the script
-
 ```bash
   $ python kanye_quotes.py
 ```
