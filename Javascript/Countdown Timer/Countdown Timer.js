@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Countdown Timer</title>
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  
   <style>
       html {
   box-sizing: border-box;
