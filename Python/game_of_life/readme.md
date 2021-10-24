@@ -26,3 +26,6 @@ The inital board state of:
 
 After a couple seconds have past will become:
 ![image](https://user-images.githubusercontent.com/66142165/138596968-164a0e4b-bdc5-41d1-a738-5006a7b1f6ab.png)
+
+And here is a screen shot of the full program window:
+![image](https://user-images.githubusercontent.com/66142165/138597103-4d0f800f-be5f-4300-a789-be3b7f76034c.png)
