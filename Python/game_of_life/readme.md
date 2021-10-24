@@ -15,13 +15,14 @@ The game simulates life and death following the below rules:
 
 
 
-Left click to add cells
-right click to remove cells
-click start to start the game,
-click stop to pause.
-click clear to clear the board.
+Left click to add cells.
+Right click to remove cells.
+Click start to start the game.
+Click stop to pause.
+Click clear to clear the board.
 
 The inital board state of:
 ![image](https://user-images.githubusercontent.com/66142165/138596973-3d4b36f1-caf0-4584-b3e5-e0ffed08d32a.png)
-after a couple seconds have past will become:
+
+After a couple seconds have past will become:
 ![image](https://user-images.githubusercontent.com/66142165/138596968-164a0e4b-bdc5-41d1-a738-5006a7b1f6ab.png)
